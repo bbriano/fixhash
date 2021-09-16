@@ -12,3 +12,6 @@ Use:
 
 Help:
 	$ fixhash -h
+
+Install:
+	$ go install github.com/bbriano/fixhash

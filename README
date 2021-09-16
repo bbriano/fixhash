@@ -5,7 +5,7 @@ Fixhash searches for an input to a hash function
 such that the output matches some pattern.
 
 Use:
-	$ fixhash -o deadbeefa
+	$ fixhash -o deadbeef
 	f47ad10bbb51e5a7f34b0b18deadbeef6f130ecf79808cb497be8ba646ad99b3	tyfsuu
 	$ echo -n tyfsuu | shasum -a 256
 	f47ad10bbb51e5a7f34b0b18deadbeef6f130ecf79808cb497be8ba646ad99b3  -

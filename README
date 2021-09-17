@@ -1,6 +1,3 @@
-Fixhash
-=======
-
 Fixhash searches for an input to a hash function
 such that the output matches some pattern.
 

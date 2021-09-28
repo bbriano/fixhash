@@ -1,14 +1,10 @@
-Fixhash searches for an input to a hash function
-such that the output matches some pattern.
+Fixhash finds x where hash(x) matches /regex/.
 
-Use:
-	$ fixhash -o deadbeef
-	f47ad10bbb51e5a7f34b0b18deadbeef6f130ecf79808cb497be8ba646ad99b3	tyfsuu
-	$ echo -n tyfsuu | shasum -a 256
-	f47ad10bbb51e5a7f34b0b18deadbeef6f130ecf79808cb497be8ba646ad99b3  -
-
-Help:
-	$ fixhash -h
+Example:
+	% fixhash -f sha256 -o '^beef'
+	beefbbb0325821642581973307b13c6bfbbdfb9b9d68c17256f456f568e1eeb8	heyziuouo
+	% echo -n heyziuouo | shasum -a 256
+	beefbbb0325821642581973307b13c6bfbbdfb9b9d68c17256f456f568e1eeb8  -
 
 Install:
 	$ go install github.com/bbriano/fixhash

@@ -1,5 +1,4 @@
-// Fixhash searches an input output pair matching some regexp pattern
-// such that hash(input) = output.
+// Fixhash finds x where hash(x) matches /regex/.
 package main
 
 import (
@@ -15,7 +14,7 @@ import (
 	"github.com/lucasjones/reggen"
 )
 
-var algorithm = flag.String("a", "sha256", "Hash algorithm [md5|sha256]")
+var algorithm = flag.String("f", "sha256", "Hash function [md5|sha256]")
 var maxRepeat = flag.Int("r", 10, "Maximum [*,+] repeats")
 var inPattern = flag.String("i", "[a-z]+", "Input pattern")
 var outPattern = flag.String("o", "", "Output pattern")

@@ -1,10 +1,10 @@
 Fixhash finds x where hash(x) matches /regex/.
 
-Example:
+EXAMPLE
 	% fixhash -f sha256 -o '^beef'
-	beefbbb0325821642581973307b13c6bfbbdfb9b9d68c17256f456f568e1eeb8	heyziuouo
+	beefbbb0325821642581973307b13c6bfbbdfb9b9d68c17256f456f568e1eeb8    heyziuouo
 	% echo -n heyziuouo | shasum -a 256
 	beefbbb0325821642581973307b13c6bfbbdfb9b9d68c17256f456f568e1eeb8  -
 
-Install:
+INSTALL
 	$ go install github.com/bbriano/fixhash
